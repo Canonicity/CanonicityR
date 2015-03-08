@@ -1,9 +1,23 @@
-Package: Canonicity
+Package: CanonicityR
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
+Title: Assesses the Canonicity of Texts
+Version: 0.1
 Date: 2015-03-06
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Authors@R: person("Sean", "Fischer", email = "sf585978@gmail.com",
+	role = c("aut", "cre"))
+Maintainer: Sean Fischer <sf585978@gmail.com>
+Description: Compares inputed texts to texts from Harold Bloom's The 
+	Western Canon by assessing three different measures of literary
+	complexity. Similarity is measured using the Euclidean distance
+	technique. The syuzhet and stringi packages are used to measure
+	sentence features.
+URL: https://github.com/Canonicity/CanonicityR
+License: MIT + file LICENSE
+Imports:
+	devtools,
+	syuzhet,
+	stringi
+LazyData: true
+Suggests:
+NeedsCompilation: no
+VignetteBuilder: 
