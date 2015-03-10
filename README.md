@@ -16,7 +16,7 @@ devtools::install_github("Canonicity/CanonicityR")
 To use the CanonicityR package:
 ```
 download.file("http://www.gutenberg.org/cache/epub/84/pg84.txt", "frankenstein.txt")
-frankenstein <- scan("frankenstein.txt", what = "", skip = skip)
+frankenstein <- scan("frankenstein.txt", what = "character", sep="\n")
 textComplexitySimilarity(frankenstein)
 ```
 
